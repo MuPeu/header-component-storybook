@@ -1,8 +1,8 @@
 import "./styled.css";
 
-export default function Header({logo, links = [], buttons = [], backgroundColor = "#ffffff", textColor = "#000000", buttonVariant = "primary"}) {
+export default function Header({logo, links = [], buttons = [], backgroundColor = "#ffffff", textColor = "#000000", buttonVariant = "primary", buttonBg, buttonText}) {
     return (
-        <header className="header" style={{ backgroundColor, color: textColor }}>
+        <header className="header" style={{ backgroundColor, color: textColor, "--button-bg": buttonBg, "--button-text": buttonText }}>
             <div className="header__logo">
                 <img src={logo.src} alt={logo.alt} />
             </div>

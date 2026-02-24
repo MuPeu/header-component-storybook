@@ -34,13 +34,7 @@
     cursor: pointer;
 }
 
-.btn--primary {
-    background-color: #1976d2;
-    color: white;
-}
-
-.btn--secondary {
-    background-color: transparent;
-    border: 1px solid #1976d2;
-    color: #1976d2;
+.header button {
+  background-color: var(--button-bg, #e5e5e5);
+  color: var(--button-text, #111);
 }
