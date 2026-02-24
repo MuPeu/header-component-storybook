@@ -1,0 +1,26 @@
+import { fn } from "storybook/test";
+
+import Header from "./index";
+
+export default {
+    title: "Components/Header",
+    component: Header,
+};
+
+export const Default = {
+    args: {
+        logo: {
+            src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/960px-LEGO_logo.svg.png",
+            alt: "Logo Lego"
+        },
+        links: [
+            { label: "Home", href: "#" },
+            { label: "Sobre", href: "#" }
+        ],
+        buttons: [
+            { label: "Login", onClick: () => alert("Login") }
+        ],
+        backgroundColor: "#f5f5f5",
+        textColor: "#222",
+    }
+};
